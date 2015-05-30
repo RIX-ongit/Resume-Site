@@ -1,0 +1,261 @@
+
+/* Font Stuff */
+.title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700; 
+}
+
+.supertitle {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 100px; 
+}
+
+/*p {
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	line-height: 40px;
+	font-weight: 300;
+}*/
+
+h1 {
+	font-size:48pt;
+	font-weight:100;
+	line-height:60pt;
+}
+
+/* General CSS */
+
+.center {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+}
+
+.mtl {
+	margin-top: 30px;
+}
+
+.mts {
+	margin-top: 8px;
+}
+
+/* General button style (reset) */
+.btn-custom {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 15px 65px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-custom:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-2 {
+	background: #1ABC9C;
+	color: #fff;
+	box-shadow: 0 8px #16A085;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+/* Button 2c */
+.btn-2c {
+	border-radius: 5px;
+}
+
+.btn-2c:hover {
+	box-shadow: 0 4px #16A085;
+	top: 2px;
+}
+
+.btn-2c:active {
+	box-shadow: 0 0 #16A085;
+	top: 6px;
+}
+
+/* Button 2d */
+.btn-2d {
+	border-radius: 5px;
+}
+
+.btn-2d:hover {
+	box-shadow: 0 8px #ab3c3c;
+	top: -2px;
+}
+
+.btn-2d:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+}
+
+.init{
+	display:none;
+}
+.small{
+	display:none;
+}
+
+.job {
+	font-size: 15px;
+	font-weight: bold;
+	color:#000;
+}
+
+.icos {
+	font-size: 15px;
+	margin-left: 8px;
+	opacity: 0.9;
+}
+
+
+@media only screen and (max-width: 767px) {       
+	.big {
+		display:none;
+	}
+
+	.init {
+		display:block;
+	}
+
+	.small {
+		display:block;
+		font-size: 20px;
+		margin-top: 10px;
+		margin-left:7px;
+	}
+
+	#footer{
+		height: 155px !important; 
+	}
+}
+
+
+/* ----- TOOLTIP ---- */
+.tipsy { font-size: 11px; position: absolute; padding: 5px; z-index: 100000; }
+.tipsy-inner { background-color: #000; color: #FFF; max-width: 200px; padding: 5px 8px 4px 8px; text-align: center; }
+
+/* Rounded corners */
+.tipsy-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+
+/* Uncomment for shadow */
+/*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
+
+.tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
+
+/* Rules to colour arrows */
+.tipsy-arrow-n { border-bottom-color: #000; }
+.tipsy-arrow-s { border-top-color: #000; }
+.tipsy-arrow-e { border-left-color: #000; }
+.tipsy-arrow-w { border-right-color: #000; }
+
+.tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+.tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
+.tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
+.tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+.tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+.tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+.tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+.tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
+
+.tip {
+	cursor: pointer;
+}
+
+/*  
+Sticky Footer Solution
+*/
+
+* {margin:0;padding:0;} 
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%;
+}
+
+#main {
+	overflow:auto;
+	padding-bottom: 180px;
+	}  /* must be same height as the footer */
+
+#footer {
+	position: relative;
+	margin-top: -100px; /* negative value of footer height */
+	height: 100px;
+	clear:both;
+	background-color: #000;
+	color:#FFF;
+	
+} 
+
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+.title-footer {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700; 
+	color:#898989;
+	letter-spacing: 5px;
+}
+
+
+.title-footer2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700; 
+	color:#898989;
+	margin-top:-5px;
+}
+
+#footer p {
+	color:#898989;
+	margin-top: 2px;
+	margin-left: 8px;
+}
+
+#footer li {
+	color:#898989;
+}
+
+
+#footer a {
+	text-decoration: none;
+	color:#898989;
+}	
+
+#footer a:hover{
+	color: #1ABC9C;
+}
